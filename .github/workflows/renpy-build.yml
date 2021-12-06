@@ -11,3 +11,6 @@ jobs:
       with:
         sdk-version: '7.3.2'
         project-dir: '.'
+      env:
+        SDL_AUDIODRIVER: dummy
+        SDL_VIDEODRIVER: dummy
