@@ -1,0 +1,5 @@
+- name: Build VN project
+  uses: ProjectAliceDev/renpy-build-action@master
+  with:
+    sdk-version: '7.3.2'
+    project-dir: '.'
