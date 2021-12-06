@@ -1,5 +1,14 @@
-- name: Build VN project
-  uses: ProjectAliceDev/renpy-build-action@master
-  with:
-    sdk-version: '7.3.2'
-    project-dir: '.'
+name: "build"
+on:
+  workflow_dispatch
+
+on: [push]
+jobs:
+  build-renpy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Build VN project
+      uses: ProjectAliceDev/renpy-build-action@master
+      with:
+        sdk-version: '7.3.2'
+        project-dir: '.'
